@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="F:/node/node" path-to-js-file="bin/www.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="DEBUG" value="NodeTest:*" />
+    </envs>
+    <browser url="http://localhost:3000/" />
+    <profiling log-folder="../../NodeTest/../../NodeTest" />
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+      <profiling log-folder="../../NodeTest/../../NodeTest" />
+    </EXTENSION>
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+      <browser url="http://localhost:3000/" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>

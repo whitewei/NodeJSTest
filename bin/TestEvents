@@ -1,0 +1,23 @@
+
+//创建 eventEmitter 对象
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
+
+//绑定事件处理程序
+eventEmitter.on("connection",function connected(arg1,arg2) {
+    console.log(arg1)
+    console.log(arg2)
+    console.log('success connect');
+    //触发  data_received事件
+    eventEmitter.emit("data_received");
+});
+
+//使用匿名函数绑定 data_received 事件
+eventEmitter.on("data_received",function(){
+   console.log("accept success");
+});
+
+//触发 connection事件
+eventEmitter.emit("connection","arg1","arg2");
+
+console.log("procedure end");
